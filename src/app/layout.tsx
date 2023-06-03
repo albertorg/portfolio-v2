@@ -1,8 +1,6 @@
 import { Metadata } from 'next'
-import { Inter, Open_Sans } from 'next/font/google'
+import { inter } from '@/fonts'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Alberto Rodriguez | Web & Mobile',
