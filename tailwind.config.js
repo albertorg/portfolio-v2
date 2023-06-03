@@ -6,7 +6,12 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        dynamicBig: ['clamp(40px, 8vw, 75px)', '1'],
+        dynamicSm: ['clamp(14px, 2vw, 16px)', '20px']  
+      }
+    },
     colors: {
       'base': {
         100: 'rgb(15, 23, 42)',
