@@ -10,7 +10,7 @@ export const About = () => {
       <NumberedHeading title='About Me'/>
 
       <div className="md:grid grid-cols-[3fr_2fr] gap-12">
-        <div></div>
+        <div>
           <div>
             <p>Hello! I'm Alberto, a front-end developer passionate about creating engaging and functional web experiences.</p>
             <br />
