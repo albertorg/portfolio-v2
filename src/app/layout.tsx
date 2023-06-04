@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { inter, space } from '@/fonts'
+import {Space_Mono, Inter} from 'next/font/google'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   keywords: '',
   icons: ''
 }
+
+export const inter = Inter({ subsets: ['latin'] })
+
+export const space = Space_Mono({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--space-font'
+});
 
 export default function RootLayout({
   children,

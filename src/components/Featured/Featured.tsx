@@ -7,7 +7,7 @@ import Image from "next/image";
 export const Featured = () => {
   return (
     <section>
-      <NumberedHeading title="Some Projects I’ve Built"/>
+      <NumberedHeading title="Featured Projects"/>
 
       <div>
         {

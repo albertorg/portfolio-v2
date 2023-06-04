@@ -4,7 +4,7 @@ import { Button } from "@/components"
 export const Hero = () => {
     return (
         <section className="flex flex-col items-start justify-center min-h-screen">
-            <span className={`${space.className} text-primary mb-2 ml-1`}>
+            <span className={'text-primary mb-2 ml-1 font-space'}>
                 Welcome, I'm
             </span>
             <h1 className="text-white mt-2 font-medium text-dynamicBig">
