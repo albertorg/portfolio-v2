@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { NumberedHeading } from '@/components';
 
+const skills = ['JavaScript', 'TypeScript', 'React', 'Next.js', 'React Native', 'Tailwind']
+const li = "relative mb-2 pl-5 font-space text-sm before:content-['▹'] before:absolute before:left-0 before:text-primary"
 
 export const About = () => {
   return (
@@ -8,7 +10,7 @@ export const About = () => {
       <NumberedHeading title='About Me'/>
 
       <div className="md:grid grid-cols-[3fr_2fr] gap-12">
-        <div className="text">
+        <div></div>
           <div>
             <p>Hello! I'm Alberto, a front-end developer passionate about creating engaging and functional web experiences.</p>
             <br />
@@ -23,13 +25,25 @@ export const About = () => {
             <p>Here are a few technologies I've been working with recently:</p>
           </div>
 
-          <ul className="list-skills"></ul>
+          <ul className="grid grid-cols-[repeat(2,minmax(140px,200px))] sm:grid-cols-[repeat(3,minmax(140px,200px))] p-0 
+            mt-5 overflow-hidden">
+            {/* <li className="relative mb-2 pl-5 font-space text-sm before:content-['▹'] before:absolute  
+              before:left-0 before:text-primary">
+              Prueba
+            </li> */}
+            {skills.map(skill => <li key={skill} className={li}>{skill}</li>)}
+          </ul>
         </div>
 
         <div className="relative max-w-[300px] mt-12 mr-auto mb-0 w-[70%] md:m-0 md:max-w-[300px]">
-          <div className="wrapper">
+          <div className="block relative w-full rounded-xl before:block before:absolute before:w-full before:h-full before:rounded-xl
+            before:top-0  before:left-0 before:bg-white before:[mix-blend-mode:screen] after:block 
+            after:absolute after:w-full after:h-full after:rounded-xl after:top-5  after:left-5 after:border-2 
+            after:border-solid after:border-primary after:z-[-1] after:transition-[all_0.25s_cubic-bezier(0.645,0.045,0.355,1)0s] hover:bg-opacity-0 hover:outline-0 hover:after:top-4 
+            hover:after:left-4"
+          >
             <Image 
-              src='/avatar.jpeg' 
+              src='/perfil.jpgd' 
               width={300}
               height={300} 
               alt='Avatar'
