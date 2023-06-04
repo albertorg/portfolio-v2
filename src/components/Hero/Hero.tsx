@@ -1,7 +1,5 @@
 import { space } from "@/fonts"
 import { Button } from "@/components"
-// import { Button } from "../Button/Button"
-
 
 export const Hero = () => {
     return (
@@ -16,8 +14,8 @@ export const Hero = () => {
                 I build webs and mobile apps.
             </h2>
             <p className="mt-6 mb-12 max-w-lg">
-                I'm a software developer based in Buenos Aires AR, specializing in building exceptional
-                websites and mobile applications, and everything in between.
+                I am a front-end developer focused on building websites and mobile applications that deliver 
+                the best user experience and have a beautiful interface.
             </p>
 
             <Button text={'Get In Touch'}/>

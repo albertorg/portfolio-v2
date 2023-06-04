@@ -9,7 +9,12 @@ module.exports = {
     extend: {
       fontSize: {
         dynamicBig: ['clamp(40px, 8vw, 75px)', '1'],
-        dynamicSm: ['clamp(14px, 2vw, 16px)', '20px']  
+        dynamicSm: ['clamp(14px, 2vw, 16px)', '20px'],
+        dynamicH2: ['clamp(26px, 5vw, 16px)', '2.2rem'],
+        dynamicSection: ['clamp(0.9rem, 2vw, 1.3rem)', '1rem'],
+      },
+      fontFamily: {
+        space: ['var(--space-font)']
       }
     },
     colors: {

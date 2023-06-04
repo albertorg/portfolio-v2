@@ -2,7 +2,8 @@ import { Inter, Space_Mono, Open_Sans } from 'next/font/google';
 
 export const space = Space_Mono({
     weight: '400',
-    subsets: ['latin']
+    subsets: ['latin'],
+    variable: '--space-font'
 });
 
 export const inter = Inter({ subsets: ['latin'] })
