@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { space } from '../../fonts/fonts';
 
 interface Props {
     title: string;

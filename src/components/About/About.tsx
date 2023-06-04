@@ -43,7 +43,7 @@ export const About = () => {
             hover:after:left-4"
           >
             <Image 
-              src='/perfil.jpgd' 
+              src='/perfil.jpg' 
               width={300}
               height={300} 
               alt='Avatar'
