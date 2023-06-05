@@ -1,7 +1,8 @@
 import { featured } from "@/data/featured"
 import { NumberedHeading } from "@/components"
+import { AiOutlineGithub } from 'react-icons/ai'
+import { FiExternalLink } from 'react-icons/fi'
 import Image from "next/image";
-
 
 
 export const Featured = () => {
@@ -15,10 +16,14 @@ export const Featured = () => {
             const { title, external, techs, github, cover, descriptionHtml } = project;
 
             return (
-              <div className="styledProject">
-                <div className="project-content">
-                  <p className="project-overline">Featured Project</p>
-                  <h3 className="project-title">{title}</h3>
+              <div key={title} className="grid gap-[10px] grid-cols-12 items-center ?">
+                <div className="relative col-[1_/_7] row-span-full ">
+                  <p className="my-[10px] text-primary font-space text-xs">
+                    Featured Project
+                  </p>
+                  <h3 className="text-white text-[clamp(24px,5vw,28px)]">
+                    {title}
+                  </h3>
                   <div
                     className="project-description"
                     dangerouslySetInnerHTML={{ __html: descriptionHtml }}
@@ -35,7 +40,7 @@ export const Featured = () => {
                   <div className="styled project link">
                     {github && (
                       <a rel="noreferrer" target="_blank" href={github} aria-label="GitHub Link">
-                        {/* <Icon name="GitHub" /> */}
+                        <AiOutlineGithub />
                       </a>
                     )}
                     {external && (
@@ -45,7 +50,7 @@ export const Featured = () => {
                         href={external}
                         aria-label="External Link"
                       >
-                        {/* <Icon name="External" /> */}
+                        <FiExternalLink />
                       </a>
                     )}
                   </div>
@@ -55,7 +60,13 @@ export const Featured = () => {
                   <a href={external || github || '#'}>
                     <div className="img-wrapper">
                       <div className="img-cont" />
-                      <Image src={cover} alt={title} className="img" width={100} height={100}/>
+                      <Image 
+                        src={cover} 
+                        alt={title} 
+                        width={100} 
+                        height={100}
+                        className="object-cover object-center max-w-full rounded-xl" 
+                      />
                     </div>
                   </a>
                 </div>
