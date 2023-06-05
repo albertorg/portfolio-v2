@@ -20,7 +20,7 @@ module.exports = {
     colors: {
       'base': {
         100: 'rgb(15, 23, 42)',
-        200: 'rgb(19, 28, 49)'
+        200: 'rgb(22 33 58)'
       },
       'primary': '#0693e3',
       'primary-2': 'rgba(6,147,227,0.1)',

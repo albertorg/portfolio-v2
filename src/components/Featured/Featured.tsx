@@ -10,62 +10,76 @@ export const Featured = () => {
     <section>
       <NumberedHeading title="Featured Projects"/>
 
-      <div>
+      <div className="flex flex-col gap-13 sm:gap-24">
         {
           featured.map((project, idx) => {
             const { title, external, techs, github, cover, descriptionHtml } = project;
 
             return (
-              <div key={title} className="grid gap-[10px] grid-cols-12 items-center ?">
-                <div className="relative col-[1_/_7] row-span-full ">
+              <div key={title} className="grid gap-[10px] grid-cols-12 items-center group">
+                <div className="relative col-[1_/_7] row-span-full group-odd:text-right group-odd:col-[7/-1]">
                   <p className="my-[10px] text-primary font-space text-xs">
                     Featured Project
                   </p>
-                  <h3 className="text-white text-[clamp(24px,5vw,28px)]">
+                  <h3 className="text-white text-[clamp(24px,5vw,28px)] leading-10">
                     {title}
                   </h3>
                   <div
-                    className="project-description"
+                    className="shadow-lg relative z-20 p-6 rounded-xl bg-base-200"
                     dangerouslySetInnerHTML={{ __html: descriptionHtml }}
                   />
 
                   {techs.length && (
-                    <ul className="project-tech-list">
+                    <ul className="flex flex-nowrap relative z-20 mt-6 mb-[10px] gap-5 
+                      text-[13px] sm:text-sm group-odd:justify-end">
                       {techs.map((tech) => (
-                        <li key={tech}>{tech}</li>
+                        <li key={tech} className="font-space whitespace-nowrap">
+                          {tech}
+                        </li>
                       ))}
                     </ul>
                   )}
 
-                  <div className="styled project link">
+                  <div className="flex items-center relative mt-[10px] ml-[-10px] group-odd:justify-end">
                     {github && (
-                      <a rel="noreferrer" target="_blank" href={github} aria-label="GitHub Link">
-                        <AiOutlineGithub />
+                      <a 
+                        className="p-[10px]"
+                        rel="noreferrer" 
+                        target="_blank" 
+                        href={github} 
+                        aria-label="GitHub Link"
+                      >
+                        <AiOutlineGithub 
+                          className="w-5 h-5 hover:text-white transition-colors "
+                        />
                       </a>
                     )}
                     {external && (
                       <a
+                        className="p-[10px] ml-[-5px]"
                         rel="noreferrer"
                         target="_blank"
                         href={external}
                         aria-label="External Link"
                       >
-                        <FiExternalLink />
+                        <FiExternalLink 
+                          className="w-5 h-5 hover:text-white transition-colors"
+                        />
                       </a>
                     )}
                   </div>
                 </div>
 
-                <div className="styledProjectImgWrapper">
+                <div className="shadow-sm col-[6_/_-1] row-span-full relative z-10 w-full max-w-full group-odd:col-[1/8]">
                   <a href={external || github || '#'}>
-                    <div className="img-wrapper">
-                      <div className="img-cont" />
+                    <div className="relative overflow-hidden">
+                      <div className="w-full" />
                       <Image 
                         src={cover} 
                         alt={title} 
-                        width={100} 
-                        height={100}
-                        className="object-cover object-center max-w-full rounded-xl" 
+                        width={520}
+                        height={324}
+                        className="object-cover object-[center_center] max-w-full rounded-xl top-0 left-0 w-full h-full" 
                       />
                     </div>
                   </a>
