@@ -7,7 +7,7 @@ import { FaLinkedinIn, FaInstagram } from 'react-icons/fa'
 export const Footer = () => {
   return (
     <footer className="flex justify-center items-center flex-col min-h-[70px] p-4 text-center">
-      <div className="w-full max-w-[270px] mb-[10px] md:hidden">
+      <div className="w-full max-w-[270px] mb-[10px] lg:hidden">
         <ul className="flex justify-between">
           {socialMedia &&
             socialMedia.map(({ name, url }) => (
