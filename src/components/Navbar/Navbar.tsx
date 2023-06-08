@@ -1,11 +1,31 @@
-import { navLinks } from '@/data';
-import { MobileMenu } from './MobileMenu';
-import Image from 'next/image';
+'use client'
+import { navLinks } from '@/data'
+import { MobileMenu } from './MobileMenu'
+import Image from 'next/image'
+import { useScrollDirection } from '@/hooks'
+import { useState, useEffect } from 'react'
 
 
 export const Navbar = () => {
+  const scrollDirection = useScrollDirection({initialDirection: 'down'})
+  const [scrolledToTop, setScrolledToTop] = useState(true)
+
+  const handleScroll = () => {
+    setScrolledToTop(window.scrollY < 50)
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <header className='flex fixed w-full z-30 top-0 px-12 h-[90px] bg-base-100 shadow-xl'>
+    <header className={`flex fixed w-full z-30 top-0 px-6 sm:px-10 lg:px-[50px] h-[90px] bg-base-100 transition-all duration-300
+      ${scrollDirection === 'up' && !scrolledToTop && 'translate-y-0 shadow-xl'}
+      ${scrollDirection === 'down' && !scrolledToTop && 'translate-y-[calc(90px_*_-1)] shadow-xl'}`}>
       <nav className='flex justify-between w-full text-white font-space [counter-reset:_item_0]'>
         <div className="cursor-pointer flex items-center">
           <a href="/" aria-label="home" className='w-[42px] h-[42px]'>
