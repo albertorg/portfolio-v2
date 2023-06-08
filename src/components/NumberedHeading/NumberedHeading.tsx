@@ -2,7 +2,7 @@ import { FC } from "react";
 
 interface Props {
     title: string;
-    overline: boolean;
+    overline?: boolean;
 }
 
 export const NumberedHeading: FC<Props> = ({ title, overline = false }) => {

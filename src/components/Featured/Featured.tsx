@@ -1,4 +1,4 @@
-import { featured } from "@/data/featured"
+import { featured } from "@/data"
 import { NumberedHeading } from "@/components"
 import { AiOutlineGithub } from 'react-icons/ai'
 import { FiExternalLink } from 'react-icons/fi'

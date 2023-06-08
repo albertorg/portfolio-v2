@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import {Space_Mono, Inter} from 'next/font/google'
 import './globals.css'
+import { Navbar, Social, Email, Footer } from '@/components';
 
 export const metadata: Metadata = {
   title: 'Alberto Rodriguez | Web & Mobile',
@@ -25,7 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} ${space.variable}`}>
+        <Navbar />
+        <Social />
+        <Email />
         {children}
+        <Footer />
       </body>
     </html>
   )
