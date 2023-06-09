@@ -1,11 +1,10 @@
-import { space } from "@/fonts"
 import { Button } from "@/components"
 
 export const Hero = () => {
     return (
         <section className="flex flex-col items-start justify-center min-h-screen">
             <span className={'text-primary mb-2 ml-1 font-space'}>
-                Welcome, I'm
+                Welcome, I&apos;m
             </span>
             <h1 className="text-white mt-2 font-medium text-dynamicBig">
                 Alberto Rodríguez

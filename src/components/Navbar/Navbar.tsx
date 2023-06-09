@@ -38,7 +38,7 @@ export const Navbar = () => {
           </a>
         </div>
 
-        <div className='flex items-center'>
+        <div className='md:flex items-center hidden'>
           <ol className='flex justify-between'>
             {navLinks &&
               navLinks.map(({ url, name }, i) => (
@@ -54,7 +54,7 @@ export const Navbar = () => {
           </ol>
         </div>
 
-        {/* <MobileMenu /> */}
+        <MobileMenu />
       </nav>
     </header>
   )

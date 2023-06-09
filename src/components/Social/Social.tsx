@@ -1,6 +1,6 @@
 import { AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai'
 import { FaLinkedinIn, FaInstagram } from 'react-icons/fa'
-import { socialMedia } from "@/data"
+import { socialMedia } from '@/data'
 
 export const Social = () => {
   return (

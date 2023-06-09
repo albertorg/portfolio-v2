@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export const Featured = () => {
   return (
-    <section>
+    <section id="projects">
       <NumberedHeading title="Projects" />
 
       <div className="flex flex-col gap-16 sm:gap-24">

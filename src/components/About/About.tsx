@@ -12,17 +12,17 @@ export const About = () => {
       <div className="md:grid grid-cols-[3fr_2fr] gap-12">
         <div>
           <div>
-            <p>Hello! I'm Alberto, a front-end developer passionate about creating engaging and functional web experiences.</p>
+            <p>Hello! I&apos;m Alberto, a front-end developer passionate about creating engaging and functional web experiences.</p>
             <br />
             <p>
               I love learning new and better ways to create seamless user experiences with clean, efficient, and scalable code.
-              I consider work an ongoing education, and I'm always looking for opportunities to work with those who are willing to
+              I consider work an ongoing education, and I&apos;m always looking for opportunities to work with those who are willing to
               share their knowledge as much as I want to learn.
             </p>
             <br />
             <p>My goal is to always build scalable products and performant experiences.</p>
             <br />
-            <p>Here are a few technologies I've been working with recently:</p>
+            <p>Here are a few technologies I&apos;ve been working with recently:</p>
           </div>
 
           <ul className="grid grid-cols-[repeat(2,minmax(140px,200px))] sm:grid-cols-[repeat(3,minmax(140px,200px))] p-0 

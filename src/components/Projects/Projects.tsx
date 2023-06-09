@@ -1,12 +1,10 @@
-import { projects } from "@/data/projects";
+import { projects } from '@/data/projects'
 import { AiOutlineGithub } from 'react-icons/ai'
 import { FiExternalLink } from 'react-icons/fi'
 import { BsFolder2Open } from 'react-icons/bs'
 
-// const PROJECTS_GRID_LIMIT = 6
 
 export const Projects = () => {
-
   return (
     <section className="flex flex-col items-center">
 
