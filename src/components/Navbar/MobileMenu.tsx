@@ -43,10 +43,10 @@ export const MobileMenu = () => {
               ${menuOpen ? 'delay-[0.12s] rotate-[225deg] ease-[cubic-bezier(0.215,0.61,0.355,1)] before:w-full before:top-0 before:opacity-0' 
                 : 'delay-0 rotate-0 ease-[cubic-bezier(0.55,0.055,0.675,0.19)] before:w-[80%] before:top-[-10px] before:opacity-1'}
               before:block before:absolute before:left-auto before:right-0 before:w-12 before:bg-primary before:h-[2px]
-              before:rounded-[5px] before:ease-[ease] before:[transition:_top_0.1s,opacity_.2s] before:duration-100 after:block after:absolute after:left-auto 
-              after:duration-100 after:right-0 after:w-12 after:bg-primary after:h-[2px] after:rounded-[5px] after:ease-[ease] after:[transition:_bottom_0.1s,transform_0.22s_0.12s]
-              ${menuOpen ? 'after:w-full after:bottom-0 after:rotate-[-90deg] after:[transition:_bottom_0.1s_0.22s,transform_0.22s]' 
-                : 'after:w-[80%] after:bottom-[-10px] after:rotate-0 after:[transition:_bottom_0.1s,transform_0.22s_0.12s]'}`}/>
+              before:rounded-[5px] before:ease-[ease] after:block after:absolute after:left-auto 
+              after:duration-100 after:right-0 after:w-12 after:bg-primary after:h-[2px] after:rounded-[5px] after:ease-[ease] 
+              ${menuOpen ? 'after:w-full after:bottom-0 after:rotate-[-90deg] after:[transition:_bottom_0.1s,transform_0.15s_0.12s] before:[transition:_top_0.1s,opacity_.2s]' 
+              : 'after:w-[80%] after:bottom-[-10px] after:rotate-0 after:[transition:_bottom_0.1s_0.25s,transform_0.22s] before:[transition:_top_0.1s_0.22s]'}`}/>
           </div>
         </div>
 
