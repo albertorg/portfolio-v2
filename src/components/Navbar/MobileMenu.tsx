@@ -1,10 +1,12 @@
 import { navLinks } from "@/data";
+import { useClickOutside } from "@/hooks";
 import Link from "next/link";
 import { useState, useEffect } from 'react';
 
 
 export const MobileMenu = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
+  const menuRef = useClickOutside(() => setMenuOpen(false))
 
   const toggleMenu = () => setMenuOpen(!menuOpen)
 
@@ -48,7 +50,7 @@ export const MobileMenu = () => {
           </div>
         </div>
 
-        <aside className={`flex justify-center items-center fixed top-0 bottom-0 right-0 py-[50px] px-[10px] w-[min(75vw,_400px)]
+        <aside ref={menuRef} className={`flex justify-center items-center fixed top-0 bottom-0 right-0 py-[50px] px-[10px] w-[min(75vw,_400px)]
           h-screen outline-0 bg-base-200 shadow-xl z-20 ${menuOpen ? 'translate-x-[0vw]' : 'translate-x-[100vw]'}
           transition-all duration-300`}>
           <nav className="w-full flex justify-center font-space text-center">
