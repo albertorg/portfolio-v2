@@ -1,4 +1,4 @@
-import { Button } from "@/components"
+import { Button, SecButton } from "@/components"
 
 export const Hero = () => {
     return (
@@ -17,7 +17,10 @@ export const Hero = () => {
                 the best user experience and have a beautiful interface.
             </p>
 
-            <Button text={'Get In Touch'}/>
+            <div>
+                <SecButton text="Download CV" />
+                <Button text={'Get In Touch'} />
+            </div>  
         </section>
         
     )

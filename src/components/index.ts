@@ -10,4 +10,6 @@ export * from './Email/Email'
 export * from './Social/Social'
 export * from './Footer/Footer'
 export * from './Navbar/Navbar'
+export * from './SecButton/SecButton'
+
 

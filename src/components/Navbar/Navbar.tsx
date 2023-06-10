@@ -30,9 +30,9 @@ export const Navbar = () => {
         <div className="cursor-pointer flex items-center">
           <a href="/" aria-label="home" className='w-[42px] h-[42px]'>
             <Image 
-              width={36.581}
+              width={45}
               height={50.186}
-              src='/logo.png'
+              src='/logo1.png'
               alt='Alberto Rodriguez Logo'
             />
           </a>
