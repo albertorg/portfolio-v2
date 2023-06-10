@@ -23,15 +23,13 @@ export const MobileMenu = () => {
   }, [])
 
   useEffect(() => {
-    // document.body.className = menuOpen ? 'blur' : ''
-    const mainElement = document.querySelector('main');
-    mainElement && mainElement.classList.toggle('blur', menuOpen);
-    mainElement && mainElement.classList.toggle('fixed', menuOpen);
-    
+    document.body.className = menuOpen ? 'overflow-hidden ' : ''
+    const mainElement = document.querySelector('main')
+    mainElement && mainElement.classList.toggle('blur', menuOpen)
   }, [menuOpen])
 
   return (
-    <div className="md:hidden flex items-center">
+    <div className="md:hidden flex items-center ">
       <div>
         <div 
           onClick={toggleMenu}
