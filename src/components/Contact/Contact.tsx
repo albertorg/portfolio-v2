@@ -6,7 +6,7 @@ export const Contact = () => {
     <section id="contact" className="max-w-[600px] text-center mb-24">
       <NumberedHeading title="What’s Next?" overline/>
 
-      <h2 className="text-[clamp(36px,_5vw,_40px)] font-medium text-white leading-9 mb-3">
+      <h2 className="text-[clamp(36px,_5vw,_40px)] font-medium text-white leading-9 mb-5">
         Get In Touch
       </h2>
 

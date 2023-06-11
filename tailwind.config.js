@@ -33,11 +33,3 @@ module.exports = {
   },
   plugins: [],
 }
-
-// background-color: rgb(18 14 38);
-// background - color: rgb(26, 19, 54);
-
-
-// base 2: background-color: rgb(19 28 49);
-
-// 3: rgb(22 33 58)

@@ -1,14 +1,8 @@
 import { Metadata } from 'next'
-import { Space_Mono, Inter } from 'next/font/google'
-import { Navbar, Social, Email, Footer } from '@/components';
+import { Navbar, Social, Email, Footer } from '@/components'
 import './globals.css'
+import { inter, space } from './fonts'
 
-const inter = Inter({ subsets: ['latin'] })
-const space = Space_Mono({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--space-font'
-})
 
 export const metadata: Metadata = {
   title: 'Alberto Rodriguez | Web & Mobile Developer',
@@ -24,17 +18,26 @@ export const metadata: Metadata = {
     title: 'Alberto Rodriguez - Web Developer',
     description: 'Passionate web developer specializing in modern web applications.',
     images: 'https://albertorodriguez.link/perfil.jpg'
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://albertorodriguez.link/',
+    title: 'Alberto Rodriguez - Web & Mobile Developer',
+    description: 'Welcome to my personal website. I share my passion for technology, coding, and more.',
+    images: [{
+      url: ''
+    }]
   }
 }
 
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang='en'>
-      <body className={`${inter.className} ${space.variable}`}>
+    <html lang='en' className={`${inter.className} ${space.variable}`}>
+      <body>
         <Navbar />
         <Social />
         <Email />

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { NumberedHeading } from '@/components';
+import { NumberedHeading } from '@/components'
 
 const skills = ['JavaScript', 'TypeScript', 'React', 'Next.js', 'React Native', 'Tailwind', 'Docker', 'CSS', 'HTML']
 const li = "relative mb-2 pl-5 font-space text-sm before:content-['▹'] before:absolute before:left-0 before:text-primary"
