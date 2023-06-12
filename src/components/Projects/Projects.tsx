@@ -34,6 +34,8 @@ export const Projects = () => {
                         {github && (
                           <a 
                             href={github}
+                            rel="noreferrer"
+                            target="_blank"
                             aria-label="GitHub Link" 
                             className="py-1 px-2"
                           >
@@ -43,6 +45,8 @@ export const Projects = () => {
                         {external && (
                           <a
                             href={external}
+                            rel="noreferrer"
+                            target="_blank"
                             className="py-1 px-2"
                             aria-label="External Link"
                           >
