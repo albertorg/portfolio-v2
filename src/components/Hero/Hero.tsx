@@ -18,7 +18,7 @@ export const Hero = () => {
             </p>
 
             <div>
-                {/* <SecButton text="Download CV" /> */}
+                <SecButton text="Download CV" />
                 <Button text={'Get In Touch'} />
             </div>  
         </section>
