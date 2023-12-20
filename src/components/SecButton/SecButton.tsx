@@ -8,7 +8,7 @@ interface Props {
 export const SecButton: FC<Props> = ({ text }) => {
     return (
         <a 
-            href='/CV.pdf' 
+            href='/CV-Alberto-RG-Nov-2023.pdf' 
             aria-label="CV Alberto Rodriguez"
             target="_blank"
             rel="noopener noreferrer"
